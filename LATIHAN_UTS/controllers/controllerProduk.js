@@ -17,7 +17,6 @@ const produkInsert = async(req,res) => {
             deskripsi,
             harga,
             stok,
-            kategori_id
         });
         await produk.save();
         res.status(200).json({message:"Succes", data : produk});
